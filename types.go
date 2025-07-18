@@ -327,6 +327,8 @@ type Usage struct {
 }
 
 type Response struct {
+	// Conversation ID  or nil
+	ConversationId string `json:"conversation_id"`
 	// The unique ID of the response.
 	ID string `json:"id"`
 	// The object type, must be "realtime.response".
